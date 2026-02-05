@@ -10,7 +10,7 @@ This repository contains the core contracts for ETCswap V2:
 
 - **ETCswapV2Factory** - Factory contract for creating trading pairs
 - **ETCswapV2Pair** - Trading pair contract implementing the constant product AMM
-- **ETCswapV2ERC20** - LP token implementation ("ETCswap V2 LP" / ETCS-V2)
+- **ETCswapV2ERC20** - LP token implementation ("ETCswap V2 LP" / ETCswap-V2-LP)
 
 ## Differences from Uniswap V2
 
@@ -19,7 +19,7 @@ This repository contains the core contracts for ETCswap V2:
 | Package Name | `@uniswap/v2-core` | `@etcswap/v2-core` |
 | Contract Prefix | `UniswapV2*` | `ETCswapV2*` |
 | LP Token Name | "Uniswap V2" | "ETCswap V2 LP" |
-| LP Token Symbol | "UNI-V2" | "ETCS-V2" |
+| LP Token Symbol | "UNI-V2" | "ETCswap-V2-LP" |
 | Error Prefix | `UniswapV2:` | `ETCswapV2:` |
 | Target Chain | Ethereum | Ethereum Classic |
 
@@ -46,7 +46,7 @@ contracts/
 When deploying, the periphery library needs the pair bytecode hash:
 
 ```
-fa6865812aae02db67c54fe0f27c82c60f55aac028fd78b9839579911832679e
+f088d04971b3f2d665f0c6dfca9a1bf827ab3f7cd7dc4916410764516ba718bb
 ```
 
 Compute with:
@@ -81,6 +81,26 @@ yarn test
 ```
 
 All 32 tests should pass.
+
+## ETC Deployment
+
+### Live Contracts (Use Existing)
+
+WETC is already deployed on both ETC and Mordor:
+
+| Contract | Address |
+|----------|---------|
+| **WETC** | `0x1953cab0E5bFa6D4a9BaD6E05fD46C1CC6527a5a` |
+
+### Deploy
+
+```bash
+# Deploy ETCswapV2Factory
+# Constructor: feeToSetter address
+
+# Then use v2-periphery to deploy ETCswapV2Router02
+# Constructor: factory address, WETC address
+```
 
 ## ETC Compatibility
 

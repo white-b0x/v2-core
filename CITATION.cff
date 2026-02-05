@@ -1,15 +1,28 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
-authors:
-- family-names: "Zinsmeister"
-  given-names: "Noah"
-- family-names: "Adams"
-  given-names: "Hayden"
-- family-names: "Robinson"
-  given-names: "Dan"
-- family-names: "Salem"
-  given-names: "Moody"
-title: "v2-core"
+title: "ETCswap V2 Core"
+abstract: "Core smart contracts for the ETCswap V2 protocol on Ethereum Classic. A derivative work of Uniswap V2."
 version: 1.0.1
-date-released: 2019-05-03
-url: "https://github.com/Uniswap/v2-core"
+date-released: 2024-01-01
+license: GPL-3.0-or-later
+url: "https://github.com/etcswap/v2-core"
+repository-code: "https://github.com/etcswap/v2-core"
+authors:
+  - name: "White B0x"
+    website: "https://github.com/white-b0x"
+references:
+  - type: software
+    title: "Uniswap V2 Core"
+    authors:
+      - family-names: "Zinsmeister"
+        given-names: "Noah"
+      - family-names: "Adams"
+        given-names: "Hayden"
+      - family-names: "Robinson"
+        given-names: "Dan"
+      - family-names: "Salem"
+        given-names: "Moody"
+    version: 1.0.1
+    date-released: 2019-05-03
+    url: "https://github.com/Uniswap/v2-core"
+    license: GPL-3.0-or-later

@@ -7,7 +7,7 @@ contract ETCswapV2ERC20 is IETCswapV2ERC20 {
     using SafeMath for uint;
 
     string public constant name = 'ETCswap V2 LP';
-    string public constant symbol = 'ETCS-V2';
+    string public constant symbol = 'ETCswap-V2-LP';
     uint8 public constant decimals = 18;
     uint  public totalSupply;
     mapping(address => uint) public balanceOf;

@@ -5,7 +5,7 @@
   "homepage": "https://etcswap.org",
   "repository": {
     "type": "git",
-    "url": "https://github.com/white-b0x/etcswap-v4"
+    "url": "https://github.com/etcswap/v2-core"
   },
   "keywords": [
     "etcswap",
